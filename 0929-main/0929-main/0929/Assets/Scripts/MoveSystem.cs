@@ -1,13 +1,22 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace LUCIEN
 {
     /// <summary>
-    /// ���ʨt��
+    /// 移動系統
     /// </summary>
     public class MoveSystem : MonoBehaviour
     {
-        [SerializeField, Header("���ʳt��"), Range(-10, 0)]
+        [SerializeField, Header("移動速度"), Range(-10, 0)]
         private float speed = -3.5f;
+
+        private void Update()
+        {
+            // transform 此物件的 Transfrom 元件
+            // Translate(x, y, z) 位移
+            // Time.deltaTime 每幀ㄓㄥˋ數花費時間
+            transform.Translate(speed * Time.deltaTime, 0, 0);
+      
+        }
     }
 }

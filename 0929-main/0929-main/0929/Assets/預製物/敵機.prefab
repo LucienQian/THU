@@ -23,14 +23,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3632845324398814519}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.39, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: -1.61, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7963229136650460130}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &7963229136650460135
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,7 +44,9 @@ GameObject:
   - component: {fileID: 7963229136650460132}
   - component: {fileID: 1595860222}
   - component: {fileID: 1595860221}
-  m_Layer: 0
+  - component: {fileID: 1970868909}
+  - component: {fileID: -2519268574926166492}
+  m_Layer: 6
   m_Name: "\u6575\u6A5F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,3 +178,32 @@ CircleCollider2D:
   m_Offset: {x: 0.103114605, y: 0}
   serializedVersion: 2
   m_Radius: 0.93259954
+--- !u!114 &1970868909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7963229136650460135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffb38cf323e47bb4097ba7a22e67d187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabBullet: {fileID: 8308383544894651572, guid: afe1380aa881e3b4889206320e18d79f, type: 3}
+  pointSpawn: {fileID: 937938260240447521}
+  interval: 3
+--- !u!114 &-2519268574926166492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7963229136650460135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f2389f76f860fa40bde43733b45204e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameTarget: "\u5B50\u5F48"
+  prefabExplosion: {fileID: 1357264814196374349, guid: 0e0daacb7bad00743b765d997ba857cd, type: 3}
